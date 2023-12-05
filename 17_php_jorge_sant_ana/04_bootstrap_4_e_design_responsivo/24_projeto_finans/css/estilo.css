@@ -1,0 +1,38 @@
+header nav {
+    background-color: rgb(128, 192, 128);
+}
+
+#nav_principal a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 8px;
+}
+
+#nav_principal a:hover {
+    background-color: rgb(87, 171, 87);
+    color: rgb(211, 226, 211);
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.407);
+}
+
+#home {
+    background-color: rgb(128, 192, 128);
+    color: rgb(255, 255, 255);
+}
+
+.caixa {
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+section, footer {
+    background-color: rgb(249, 250, 249);
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+footer p a:hover {
+
+}

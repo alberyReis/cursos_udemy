@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family= Dancing+Script & display família= Dança+Script:wght@700 & swap');
+
+body, html {
+    margin: 0;
+    font: 16px, sans-serif;
+    color: #777777;
+    height: 100%;
+}
+
+.conteudo {
+    color: white;
+    background-color: black;
+    padding: 60px 40px;
+    
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #111111;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Dancing Script', cursiva;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.caixa_01, .caixa_02, .caixa_03, .caixa_04 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.caixa_01 {
+    background-image: url(./img/imagem_01.jpg);
+}
+
+.caixa_02 {
+    background-image: url(./img/imagem_02.jpg); 
+}
+
+.caixa_03 {
+    background-image: url(./img/imagem_03.jpg); 
+}
+
+.caixa_04 {
+    background-image: url(./img/imagem_04.jpg); 
+}
+
+.conteudo_titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo_titulo span.titulo {
+    color: #ffffff;
+    background-color: #111111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}

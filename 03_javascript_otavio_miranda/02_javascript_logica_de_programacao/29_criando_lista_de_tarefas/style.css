@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@400;700 & display = swap');
+
+:root {
+    --primary_color: rgb(17, 86, 102);
+    --primary_color_darker: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary_color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+p input,
+p label,
+p button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+p input:focus {
+    outline: 1px solid var(--primary_color);
+}
+
+p button {
+    border: none;
+    background: var(--primary_color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+p button:hover {
+    background: var(--primary_color_darker);
+}
+
+li button {
+    float: right;
+}
+
+.apagar {
+    display: inline-block;
+    width: 20%;
+    margin-left: 10px;
+    border: none;
+    background: var(--primary_color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 30px;
+    cursor: pointer;
+}
+
+li {
+    font-size: 1.2em;
+}

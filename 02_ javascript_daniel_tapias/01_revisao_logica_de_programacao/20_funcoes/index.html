@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <script>
+        // Decalração de função
+       function ola01() {
+        document.write(`Olá mundo`)
+       }
+
+       ola01()
+
+       // Expressao de função
+       const ola02 = function() {
+        console.log(`Olá mundo de function expression`)
+       }
+
+       ola02()
+
+       // Arrow function
+       const ola03 = () => {
+        console.log(`Olá mundo de arrow functions`)
+       }
+
+       ola03()
+
+       // Retorno de valores
+       function obtemDiaSemana() {
+            return new Date().getDay()
+       }
+
+       let dia = obtemDiaSemana()
+       console.log(dia)
+
+       function somar(n1 = 0, n2 = 0) {
+            return n1 + n2
+       }
+
+       let soma = somar(3, 5, 8)
+
+       console.log(soma)
+
+       console.log(somar(10))
+
+       console.log(somar())
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propridades</title>
+</head>
+<body>
+    <h1>Curso Javascript</h1>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <form action="">
+        <input id="txtNome" type="text" placeholder="Nome..."><br><br>
+        <input id="txtEmail" type="text" placeholder="Email..."><br><br>
+        <input type="checkbox" id="contrato">
+        <label for="contrato">Li e aceito o contrato</label><br><br>
+        <textarea name="" id="" cols="30" rows="10" readonly>
+            este contrato...
+        </textarea>
+    </form>
+    <script>
+        const txtNome = document.querySelector('#txtNome')
+        const txtEmail = document.querySelector('#txtEmail')
+        txtNome.value = "Albery"
+        txtNome.disabled = true
+        txtEmail.readOnly = true
+    </script>
+</body>
+</html>

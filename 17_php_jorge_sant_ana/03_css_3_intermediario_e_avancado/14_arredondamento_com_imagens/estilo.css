@@ -1,0 +1,20 @@
+.caixa {
+	width: 400px;
+	background: #dedede url(./img/fundo_arredondamento.png);
+}
+
+.caixa h2 {
+	padding: 10px 20px 0 20px;
+	background: url(./img/topo_02.png) no-repeat left top;
+}
+
+.caixa p {
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+
+.caixa .ultimo {
+	background: url(./img/baixo_02.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+}

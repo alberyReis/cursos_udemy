@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Roadrage";
+    src: url(./fontes/roadrage.woff);
+}
+
+@font-face {
+    font-family: Bringheart;
+    src: url(./fontes/bringheart.woff);
+}
+
+@font-face {
+    font-family: "Ancient Medium";
+    src: url(./fontes/ancient_medium.woff);
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Ancient Medium";
+}

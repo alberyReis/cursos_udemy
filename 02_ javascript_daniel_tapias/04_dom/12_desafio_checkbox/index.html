@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propridades</title>
+</head>
+<body>
+    <h1>Curso Javascript</h1>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <form action="">
+        <input id="txtNome" type="text" placeholder="Nome..."><br><br>
+        <input id="txtEmail" type="text" placeholder="Email..."><br><br>
+        <input type="checkbox" id="contrato" onclick="enableOrDisableButton()">
+        <label id="contrato" for="contrato">Li e aceito o contrato</label><br><br>
+        <textarea name="" id="" cols="30" rows="10" readonly>
+Este contratonos dá o direito à...
+        </textarea><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <script>
+        const btn = document.querySelector('form input[type="submit"]')
+        btn.disabled = true
+        function enableOrDisableButton() {
+            const contrato = document.querySelector('#contrato')
+            let checked = contrato.checked
+            btn.disabled = !checked
+        }
+    </script>
+</body>
+</html>

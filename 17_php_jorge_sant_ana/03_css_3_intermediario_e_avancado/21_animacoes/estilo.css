@@ -1,0 +1,89 @@
+@-webkit-keyframes animacao_caixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-moz-keyframes animacao_caixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-o-keyframes animacao_caixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@keyframes animacao_caixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }   
+    to {
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+#caixa {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    /*-webkit-animation: animacao_caixa;
+    -moz-animation: animacao_caixa;
+    -o-animation: animacao_caixa;
+    animation-name: animacao_caixa;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    -o-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-iteration-count: 2;
+    -moz-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;*/
+    -webkit-animation: animacao_caixa 5s 3s 2 alternate;
+    -moz-animation: animacao_caixa 5s 3s 2 alternate;
+    -o-animation: animacao_caixa 5s 3s 2 alternate;
+    animation: animacao_caixa 5s 3s 2 alternate;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+        }
+
+        .item {
+            height: 200px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+            /*
+            Define a proporção de espaço ocupado por um item.
+            */
+            flex-grow:0;
+            /*
+            Define a capacidade de redução de tamano do item.
+            */
+            flex-shrink: 1;
+            /*
+            Indica o tamnaho inicial do flex item antes da distribuição do espaço restante.
+            */
+            flex-basis: 200px;
+        }
+
+        .item01 {
+            order: 4;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .item02 {
+            order: 2;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        .item03 {
+            order: 3;
+            flex-grow: 3;
+            flex-shrink: 5;
+        }
+
+        .item04 {
+            order: 1;
+            flex-grow: 4;
+            flex-shrink: 3;
+        }
+    </style>
+    <title>Flex Box Container</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item item01">01</div>
+        <div class="item item02">02</div>
+        <div class="item item03">03</div>
+        <div class="item item04">04</div>
+    </div>
+</html>
