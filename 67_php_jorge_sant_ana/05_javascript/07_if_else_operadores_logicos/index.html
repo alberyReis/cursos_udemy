@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // false = false
+    /*
+    if(!(5 >= 2)) {
+      document.write('Verdadeiro')
+    } else {
+      document.write('Falso')
+    }
+    */
+
+    var primeiraNota = Number(prompt('Digite a primeira nota do aluno: '))
+    var segundaNota = Number(prompt('Digite a segunda nota do aluno: '))
+    var faltas = prompt('Digite a quantidade de faltas: ')
+    var media = (primeiraNota + segundaNota) / 2
+    var notaDeCorte = 8
+    var faltasMaximas = 15
+    
+    /*
+    if (media >= notaDeCorte && faltas <= faltasMaximas) {
+      document.write("Aprovado")
+    } else {
+      document.write("Reprovado")
+    }
+    */
+
+    function avaliaAprovacao(media, notaDeCorte, faltas, faltasMaximas) {
+      var aprovacaoCondicional = media >= notaDeCorte && faltas <= faltasMaximas
+      return aprovacaoCondicional
+    }
+
+    var aprovadoOuReprovado = avaliaAprovacao(media, notaDeCorte, faltas, faltasMaximas)
+
+    var resultado = aprovadoOuReprovado ? 'Aprovado' : 'Reprovado'
+
+    document.write(resultado)
+    console.log(resultado)
+  </script> 
+  <title>JavaScript</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
