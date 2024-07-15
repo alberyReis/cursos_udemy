@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var data = new Date()
+
+    document.write(`${data.getDate()}/
+    ${data.getMonth() + 1}/
+    ${data.getFullYear()}`)
+
+    // Adicionar ou remover dias
+    document.write(data.toString())
+    data.setDate(data.getDate() + 365)
+    document.write(`<hr>`)
+    document.write(data.toString())
+    document.write(`<br><br><br>`)
+
+    // Adiconar ou remover meses
+    document.write(data.toString())
+    data.setMonth(data.getMonth() + 12)
+    document.write(`<hr>`)
+    document.write(data.toString())
+    document.write(`<br><br><br>`)
+
+    // Adicionar ou remover anos
+    document.write(data.toString())
+    data.setFullYear(data.getFullYear() + 1)
+    document.write(`<hr>`)
+    document.write(data.toString())
+    document.write(`<br><br><br>`)
+
+    //  15/01/2017
+    var data01 = new Date(2017, 0, 15)
+
+    // 23/02/2017
+    var data02 = new Date(2017, 1, 23)
+
+    document.write(data01.toString())
+    document.write(`<hr>`)
+    document.write(data02.toString())
+    document.write(`<br><br><br>`)
+
+    // Converter datas para algo que possamos calcular
+    document.write(data01.getTime())
+    document.write(`<hr>`)
+    document.write(data02.getTime())
+    document.write(`<br><br><br>`)
+
+    // Encontrar a quantidade de milissegindos entre a data01 e data02
+    document.write(`<hr>`)
+    var milissegundosEntreDatas = Math.abs(data01.getTime() - data02.getTime())
+    document.write(milissegundosEntreDatas)
+    document.write(`<br><br><br>`)
+
+    // Converter quntidade de milissegundos pra dias
+    document.write(`<hr>`)
+    var milissegundosPorDia = 1 * 24 * 60 * 60 * 1000
+    document.write(`Um dia tem ${milissegundosPorDia} milissegundos`)
+    document.write(`<br><br><br>`)
+
+    document.write(`<hr>`)
+    var resultadoConversaoMilissegundoEmData = Math.ceil(milissegundosEntreDatas / milissegundosPorDia)
+    document.write(`A diferença entre data01 e data02 é de ${resultadoConversaoMilissegundoEmData} dias`)
+  </script>
+  <title>JavaScript</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

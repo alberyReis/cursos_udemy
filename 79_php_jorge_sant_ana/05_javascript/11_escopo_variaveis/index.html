@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Escopo Glogal
+    var serie = 'Friends'
+
+    // Escopo de Bloco
+    if (true) {
+      var serie2 = 'Game of Thrones'
+      document.write(serie)
+      document.write('<br>')
+    }
+
+    document.write(serie2)
+    document.write('<br>')
+
+    // Escopo de Função
+    function x() {
+      var series3 = 'The Walking Dead'
+
+      document.write(serie)
+      document.write('<br>')
+
+      document.write(serie2)
+    }
+
+    x()
+
+    document.write('<br>')
+    document.write(serie3)
+  </script>
+  <title>JavaScript</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
