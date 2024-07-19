@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var video = Array()
+
+    video[1] = Array()
+    video[1]['nome'] = 'Fuulmetal Alchemist'
+    video[1]['categoria']
+
+    function getvideo(video) {
+      try {
+        // lógica
+        // http
+        console.log(video[0]['nome'])
+      } catch (error) {
+        tratarErro(error)
+        console.log('Agora sim podemos tratar esse erro')
+        throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!')
+      } finally {
+        console.log('Sempre passa aqui (try / catch)')
+      }
+
+      console.log('A aplicação não morreu')
+    }
+
+    function tratarErro(error) {
+      // Lógica para registrar o erro no servidor
+      console.log(error)
+    }
+
+    getvideo(video)
+  </script>
+  <title>JavaScript</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
