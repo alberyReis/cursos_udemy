@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Um software de marcenaria
+    // cadeira e sofá
+
+    // Paradigma procedural
+
+    // cadeira
+    // let cadeiras = Array()
+
+    // cadeiras[0] = Array()
+    // cadeiras[0]['quantidade_pernas'] = 4
+    // cadeiras[0]['giratoria'] = false
+    // cadeiras[0]['cor'] = 'azul'
+
+    // cadeiras[1] = Array()
+    // cadeiras[1]['quantidade_pernas'] = 4
+    // cadeiras[1]['giratoria'] = false
+    // cadeiras[1]['cor'] = 'azul'
+
+    // function girarCadeira(indice) {
+    //   if (cadeira[indice]['giratoria'] === true) {
+    //     console.log('Girou')
+    //   } else {
+    //     console.log('Cadeira não é giratória')
+    //   }
+    // }
+
+    // function adicionarCadeira(quantidade_pernas, giratoria, cor) {
+    //   let cadeira = Array()
+
+    //   cadeira['quantidade_pernas'] = quantidade_pernas
+    //   cadeira['giratoria'] = giratoria
+    //   cadeira['cor'] = cor
+
+    //   cadeiras.push(cadeira)
+    // }
+
+    // adicionarCadeira(3, false, 'verde')
+
+    // paradigma de OO
+    class Cadeira {
+      constructor(quantidade_pernas, giratoria, cor) {
+        this.quantidade_pernas = quantidade_pernas
+        this.giratoria = giratoria
+        this.cor = cor
+      }
+
+      girarCadeira(indice) {
+        if (this.giratoria === true) {
+          console.log('Girou')
+        } else {
+          console.log('Cadeira não é giratória')
+        }
+      }
+    }
+
+    let cadeiras = Array()
+
+    cadeiras.push(new Cadeira(4, false, 'azul'))
+    cadeiras.push(new Cadeira(1, true, 'vermelha'))
+
+    console.log(cadeiras)
+  </script>
+  <title>ES6</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
