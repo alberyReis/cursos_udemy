@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    Object.prototype.atributto50 = 'z'
+
+   let animal = {
+    atributto1: 'a;'
+   }
+
+   let vertebrado = {
+    __proto__: animal, atributto2: 'b'
+   }
+
+   let ave = {
+    __proto__: vertebrado, atributto3: 'c',
+    atributto2: 'x'
+   }
+
+   console.log(ave.atributto3, ave.atributto2, ave.atributto1, ave.atributto50)
+  </script>
+  <title>ES6</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
