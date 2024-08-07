@@ -1,0 +1,4 @@
+
+2#Impressora não imprime#Impressora#Impressora não imprime bla bla bla
+3#Computador parou#Hardware#Computador parou bla bla bla
+2#Rede caiu#Rede#Rede caiu bla bla bla
