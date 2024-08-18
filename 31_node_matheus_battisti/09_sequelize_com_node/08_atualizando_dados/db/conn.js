@@ -4,7 +4,7 @@
 //   connectionLimit: 10,
 //   host: 'localhost',
 //   user: 'admin',
-//   password: '23050904',
+//   password: '',
 //   database: 'nodemysql2'
 // })
 
@@ -15,7 +15,7 @@ const { Sequelize } = require('sequelize')
 const sequelize = new Sequelize('nodesequelize2', 'admin', '', {
   host: 'localhost',
   dialect: 'mysql',
-  password: '23050904',
+  password: ',
 })
 
 // try {
