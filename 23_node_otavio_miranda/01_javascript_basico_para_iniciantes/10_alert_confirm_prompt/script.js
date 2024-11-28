@@ -1,5 +1,0 @@
-let numero01 = prompt("Digite um número:")
-numero01 = parseInt(numero01)
-let numero02 = prompt("Digite outro número:")
-numero02 = parseInt(numero02)
-alert(`A soma dos valores é igual a ${numero01 + numero02}.`)
