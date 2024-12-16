@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container2 {
+      background-color: #ccc;
+      padding: 20px;
+    }
+  </style>
+  <title>Introdção</title>
+</head>
+
+<body>
+  <h1>Eventos</h1>
+  <div id="container">
+    <button id="btn1">Botão 1</button>
+    <button id="btn2" onclick="console.log('Click com atributo onclick')">Botão 2</button>
+    <button id="btn3">Botão 3</button>
+  </div>
+  <h1>Delegação de eventos</h1>
+  <div class="container2">
+    <button>Botão 1</button>
+    <button>Botão 2</button>
+    <button>Botão 3</button>
+  </div>
+  <script>
+    const btn1 = document.getElementById('btn1')
+    const btn2 = document.getElementById('btn2')
+    const btn3 = document.getElementById('btn3')
+
+    function clicou() {
+      console.log('Click funcao clicou')
+    }
+
+    btn1.onclick = function () {
+      console.log('Click btn1 funcao anonima')
+    }
+
+    btn1.onclick = clicou
+
+    btn2.addEventListener('click', clicou)
+
+    btn2.addEventListener('click', function () {
+      console.log('Click btn2 funcao anonima')
+    })
+
+    btn2.onclick = function () {
+      console.log('Função anônima no btn2')
+    }
+
+    document.addEventListener('click', function (e) {
+      console.log('clicou no document')
+      console.log(e.target)
+      console.log(e.currentTarget)
+      console.log(this)
+    }, false)
+
+    btn3.addEventListener('click', function (event) {
+      console.log(event)
+      event.stopPropagation()
+      console.log('clicou no btn3')
+    }, false)
+
+    const container = document.getElementById('container')
+    container.addEventListener('click', function () {
+      console.log('clicou no container')
+    }, true)
+
+    const container2 = document.querySelector('.container2')
+    let btns = document.querySelectorAll('.container2 button')
+
+    console.log(btns);
+
+    // btns.forEach(btn => {
+    //   btn.addEventListener('click', function (e) {
+    //     e.stopPropagation()
+    //     console.log(e.target)
+    //   })
+    // })
+
+    console.log('this___', this)
+
+    container2.addEventListener('click', (e) => {
+      // e.stopPropagation()
+      console.log('Clicou no container 2')
+      console.log(e.target)
+      console.log(e.currentTarget)
+      console.log(this)
+      if(e.target.nodeName === 'BUTTON') {
+        // console.log(e.target)
+      }
+    })
+  </script>
+</body>
+
+</html>
